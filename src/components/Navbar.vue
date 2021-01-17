@@ -58,14 +58,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  clip-path: circle(0 at 90% -10%);
-  -webkit-clip-path: circle(0 at 90% -10%);
+  clip-path: circle(0 at 75% -10%);
+  -webkit-clip-path: circle(0 at 100% -10%);
   transition: all 1s ease-out;
   pointer-events: none;
 }
 .nav-links.open {
-  clip-path: circle(2000px at 90% -10%);
-  -webkit-clip-path: circle(2000px at 90% -10%);
+  clip-path: circle(2500px at 75% -10%);
+  -webkit-clip-path: circle(2500px at 100% -10%);
   pointer-events: all;
 }
 
