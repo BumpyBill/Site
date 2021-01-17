@@ -64,8 +64,8 @@ nav {
   pointer-events: none;
 }
 .nav-links.open {
-  clip-path: circle(1500px at 90% -10%);
-  -webkit-clip-path: circle(1500px at 90% -10%);
+  clip-path: circle(2000px at 90% -10%);
+  -webkit-clip-path: circle(2000px at 90% -10%);
   pointer-events: all;
 }
 
