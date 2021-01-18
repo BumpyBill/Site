@@ -6,6 +6,7 @@
       <div class="line"></div>
     </div>
     <ul class="nav-links">
+      <li><a>Contact</a></li>
       <li><a>Projects</a></li>
       <li><a>About</a></li>
     </ul>
