@@ -1,29 +1,22 @@
 <template>
   <v-app>
     <Navbar />
+    <v-main>
+      <Title />
+    </v-main>
   </v-app>
 </template>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-</style>
-
 <script>
 import Navbar from "./components/Navbar";
+import Title from "./components/Title";
 
 export default {
   name: "App",
 
   components: {
     Navbar,
-  },
-
-  data() {
-    return {};
+    Title,
   },
 };
 </script>

@@ -13,6 +13,29 @@
   </nav>
 </template>
 
+<script>
+export default {
+  name: "Navbar",
+  methods: {
+    toggleHamburger: function() {
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+      const lines = document.querySelectorAll(".line");
+
+      navLinks.classList.toggle("open");
+
+      links.forEach((link) => {
+        link.classList.toggle("fade");
+      });
+
+      lines.forEach((link) => {
+        link.classList.toggle("open");
+      });
+    },
+  },
+};
+</script>
+
 <style scoped>
 /*
 Colors:
@@ -45,7 +68,7 @@ nav {
   right: 5%;
   top: 50%;
   transform: translate(-5%, -50%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-links {
@@ -62,6 +85,7 @@ nav {
   -webkit-clip-path: circle(0 at 100% -10%);
   transition: all 1s ease-out;
   pointer-events: none;
+  z-index: 2;
 }
 .nav-links.open {
   clip-path: circle(2500px at 75% -10%);
@@ -71,6 +95,11 @@ nav {
 
 .nav-links li {
   opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+li.fade {
+  opacity: 1;
 }
 
 .nav-links li a {
@@ -78,41 +107,4 @@ nav {
   color: white;
   text-decoration: none;
 }
-
-.nav-links li:nth-child(1) {
-  transition: all 0.5 ease 0.2;
-}
-.nav-links li:nth-child(1) {
-  transition: all 0.5 ease 0.4;
-}
-.nav-links li:nth-child(1) {
-  transition: all 0.5 ease 0.6;
-}
-
-li.fade {
-  opacity: 1;
-}
 </style>
-
-<script>
-export default {
-  name: "Navbar",
-  methods: {
-    toggleHamburger: function() {
-      const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
-      const lines = document.querySelectorAll(".line");
-
-      navLinks.classList.toggle("open");
-
-      links.forEach((link) => {
-        link.classList.toggle("fade");
-      });
-
-      lines.forEach((link) => {
-        link.classList.toggle("open");
-      });
-    },
-  },
-};
-</script>
