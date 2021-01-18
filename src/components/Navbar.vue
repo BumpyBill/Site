@@ -59,7 +59,6 @@ nav {
   margin: 5px;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  position: sticky;
 }
 .line.open {
   background: white;
