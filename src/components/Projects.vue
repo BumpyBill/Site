@@ -129,7 +129,7 @@ Colors:
 
 .projects_section {
   background-color: #161214;
-  height: 100vh;
+  height: 105vh;
   display: flex;
   padding: 5rem 6rem;
 }
